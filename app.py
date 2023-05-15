@@ -10,4 +10,5 @@ def create_app():
 
 if __name__ == '__main__':
     app = create_app()
+    # Only /products/all is working so far
     app.run(port=8080, debug=True)

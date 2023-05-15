@@ -5,7 +5,7 @@ from db import get_connection
 import json
 from models import Product
 
-products_bp = Blueprint('products', 'products_bp')
+products_bp = Blueprint('products', 'products_bp', url_prefix='products')
 
 @products_bp.route('/all', methods=['GET'])
 def get_products():
